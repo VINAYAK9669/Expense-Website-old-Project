@@ -36,8 +36,23 @@ Welcome to the Expense Tracker website! This project helps you manage your expen
   
 ## Screenshots
 
-**Home Page:**
+- **Home Page:**
+![Home Page](/Screenshots/MAINPAGE.JPG)
 
- ![Home Page](/Screenshots/MAINPAGE.JPG)
+- **Signup Form:**
+  ![Signup Form](/Screenshots/SignupForm.JPG)
+
+- **Signup Form ERROR:**
+  ![Signup Form](/Screenshots/SignupFormError.JPG)
+  ![Signup Form](/Screenshots/ErrorSignUpForm.JPG
+
+- **Login Form:**
+  ![Login Form](/Screenshots/LoginForm.JPG)
+
+- **Expense Tracker:**
+  ![Expense Tracker](/Screenshots/ExpenseTool.JPG)
+
+- **History Tracker:**
+  ![Expense Tracker](/Screenshots/History.JPG)
 
   

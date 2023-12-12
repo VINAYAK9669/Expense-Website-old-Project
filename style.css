@@ -1,0 +1,754 @@
+@import url("https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@600&family=Edu+VIC+WA+NT+Beginner:wght@600&family=Nunito:wght@200&family=Poppins:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@600&family=Edu+VIC+WA+NT+Beginner:wght@600&family=Nunito:wght@200&family=Rubik+Distressed&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;1,300;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+/*TODO: Hero section*/
+.navbar {
+  background-color: #363057;
+  border-bottom: 1px solid rgb(91, 86, 86);
+}
+/*Styling the logo*/
+
+.left-side img {
+  width: 150px;
+}
+/* Removing the style of the list*/
+.right-side,
+.left-side {
+  list-style: none;
+}
+
+.right-side li {
+  padding: 10px 50px;
+}
+
+/* Making all the list inline block*/
+.right-side li,
+.left-side li {
+  display: inline-block;
+}
+.right-side li a,
+.left-side li a {
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: white;
+}
+.right-side span {
+  color: yellow;
+  font-size: 20px;
+  stroke: yellow;
+}
+.content_table {
+  margin: 0 auto;
+  border: none;
+}
+
+.right-side li a {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.hero {
+  -webkit-transition: all 0.3s ease;
+  margin-bottom: 2rem;
+  background-color: #363057;
+}
+
+/* Styling the hero section */
+.hero-box {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.6rem;
+  width: 100%;
+}
+.grid-right-side {
+  position: relative;
+}
+
+.hero-box .grid-right-side img {
+  margin-top: 5%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 500px;
+  border-width: 0px 2px 0px 2px;
+  /* border-color: yellow; */
+  /* border-style:dashed; */
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  /* border-bottom-right-radius:36px ;
+  border-bottom-left-radius:36px ;
+  border-top-left-radius:36px;
+  border-top-right-radius:36px; */
+}
+
+.grid-left-side {
+  margin-left: 100px;
+}
+
+.grid-left-side h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  margin-top: 40px;
+  font-size: 2.8rem;
+  color: white;
+}
+
+.grid-left-side .header span {
+  color: yellow;
+}
+.heading-footer {
+  color: white;
+  font-size: 1.2rem;
+  font-family: "Poppins", sans-serif;
+  text-align: justify;
+  margin-top: 0.6rem;
+}
+.grid-left-side h3 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  margin-top: 40px;
+  font-size: 2rem;
+  color: white;
+  position: relative;
+}
+
+.enquiry-form input {
+  max-width: 250px;
+  height: 2rem;
+  margin: 5px;
+  border-radius: 5px;
+  border-style: none;
+  border-color: none;
+}
+.enquiry-form input::placeholder {
+  padding: 10px;
+  font-family: "Poppins", sans-serif;
+}
+
+.hero-box form button {
+  padding: 8px;
+  margin-top: 1.2rem;
+  height: 3.2rem;
+  padding: 0.8rem;
+  background-color: #363057;
+  border-color: none;
+  border-color: white yellow yellow white;
+  border-width: 1px 3px 3px 1px;
+  width: 9rem;
+  border-radius: 3.6rem;
+  color: white;
+  font-weight: 700;
+}
+
+.hero-box form button span {
+  color: yellow;
+  font-weight: 800;
+}
+.center {
+  text-align: center;
+}
+
+.section-space {
+  margin-top: 1.2rem;
+}
+.header {
+  margin-bottom: 1.8rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  display: block;
+}
+.introduction {
+  margin-bottom: 2rem;
+}
+
+.introduction-contains {
+  /* max-width: 1200px;
+  margin: 0 auto; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.introduction-contains .features ul {
+  text-align: justify;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  list-style: none;
+}
+.introduction-contains li {
+  padding: 1rem 0px;
+}
+
+.features span svg {
+  width: 18px;
+  color: green;
+  margin-right: 1rem;
+}
+
+.features span {
+  font-weight: 500;
+}
+.highlight-text {
+  font-weight: 500;
+  color: #363057;
+  transition: all 0.3s;
+}
+.introduction-contains .money-graph img {
+  width: 500px;
+}
+
+.hidden {
+  display: none;
+}
+.suform-container,
+.loginform-container {
+  background-color: rgba(54, 48, 87, 0.8);
+  width: 400px;
+  margin: 0 auto;
+  border-radius: 11px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  border: 5px solid white;
+  z-index: 1111;
+  padding: 1rem;
+  transition: 1s all;
+}
+
+.suform-container h1,
+.loginform-container h1 {
+  color: white;
+  position: relative;
+  margin-bottom: 2%;
+  letter-spacing: 1px;
+}
+.cancel svg {
+  width: 10%;
+  position: absolute;
+  top: -18px;
+  left: 377px;
+  stroke: white;
+  border-radius: 50%;
+  border: 3px solid white;
+  stroke-width: 900;
+}
+.cancel-login svg {
+  width: 10%;
+  position: absolute;
+  top: -33px;
+  left: 600px;
+  stroke: white;
+  border-radius: 50%;
+  border: 3px solid white;
+  stroke-width: 900;
+}
+
+.suform-container h1::after {
+  content: "";
+  position: absolute;
+  background-color: yellow;
+  height: 2px;
+  width: 33px;
+  display: block;
+  left: 123px;
+  bottom: 0;
+}
+
+.loginform-container h1::after {
+  content: "";
+  position: absolute;
+  background-color: yellow;
+  height: 2px;
+  width: 33px;
+  display: block;
+  left: 245px;
+  bottom: 0;
+}
+
+.suform-container form,
+.loginform-container form {
+  display: block;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 1.2rem;
+  background-color: rgba(54, 48, 87, 0);
+}
+.suform-container form label,
+.loginform-container form label {
+  display: block;
+  color: white;
+  font-weight: 300;
+  letter-spacing: 1.5px;
+}
+.suform-container input,
+.loginform-container form input {
+  outline: none;
+  width: 100%;
+  border: none;
+  height: 1.8rem;
+  background-color: rgba(54, 48, 87, 0);
+  border-bottom: 2px solid yellow;
+  color: white;
+  letter-spacing: 1.5px;
+  -webkit-transition: all 2s ease;
+}
+.form-field {
+  margin-bottom: 1.8rem;
+}
+.loginform-container {
+  width: 40rem;
+}
+
+.suform-container button,
+.loginform-container button {
+  color: white;
+}
+
+.suform-container button:hover,
+.loginform-container button:hover {
+  color: white;
+  border: 2px solid white;
+}
+
+.blur {
+  filter: blur(3px);
+  -webkit-filter: blur(3px);
+}
+
+.tool-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-top: 5%;
+}
+
+/* TODO: Expense Tool styling*/
+
+.tool {
+  width: 300px;
+  height: 382px;
+  background-color: #363057;
+  padding: 1.8rem;
+  border-radius: 5px;
+  border: 2px solid #1ccc9291;
+  position: relative;
+}
+.tool .formLine {
+  margin-bottom: 1rem;
+}
+
+.tool .formLine span {
+  display: block;
+  max-width: 500px;
+  margin: 0 auto;
+  background-color: #363057;
+  color: white;
+  margin-bottom: 0.6rem;
+  letter-spacing: 1.5px;
+  font-weight: 300;
+}
+
+.tool .formLine input {
+  width: 100%;
+  background-color: rgba(54, 48, 87, 0);
+  border: none;
+  outline: none;
+  color: white;
+  border-bottom: 2px solid white;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 1.5px;
+  font-size: 14px;
+  transition: all 0.3s;
+}
+.tool .formLine input:hover {
+  transform: scale(1.01);
+  border-bottom: 2px solid yellow;
+}
+
+.formLine input[type="date"] {
+  color: white;
+  font-weight: 100;
+}
+
+.tool-btn {
+  color: white;
+  background-color: #363057;
+  border: none;
+  text-align: center;
+  width: 100%;
+  font-size: 18px;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  transition: all 0.3s;
+}
+.tool-btn:hover {
+  transform: scale(0.95);
+  text-decoration: underline;
+  color: yellow;
+}
+
+.cancel-tool {
+  top: -16px;
+  left: 282px;
+  border: 2px solid yellow;
+  width: 10%;
+  position: absolute;
+  border-radius: 50%;
+  stroke: white;
+  background-color: #363057;
+  transition: all 0.5s;
+}
+
+.cancel-tool:hover {
+  transform: scale(1.5) rotate(360deg);
+}
+.current_table_tool .table th {
+  width: auto;
+}
+
+.current_table_tool .table {
+  margin: 0 auto;
+  max-width: 900px;
+}
+
+.current_table_tool .current_expenseTable td {
+  width: auto;
+}
+
+.current_table_tool h3 {
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 1.2rem;
+}
+
+.current_expenseTable td {
+  font-family: "Poppins", sans-serif;
+}
+
+.current_expenseTable td svg {
+  stroke: green;
+  width: 26px;
+}
+.content_table {
+  margin: 0 200px;
+}
+
+.content_table .table {
+  margin: 0 auto;
+  width: 800px;
+}
+
+.content_table .table tr {
+  display: flex;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+  border-bottom: 1px solid #363057;
+}
+.content_table .table tr th {
+  margin-top: 10px;
+  width: 25%;
+  font-family: "Poppins", sans-serif;
+  border-bottom: 4px solid #363057;
+}
+
+.content_table .table tr td {
+  width: 25%;
+}
+
+.content_table .expenseTable tr td {
+  width: 25%;
+}
+
+.grid {
+  display: grid;
+}
+.grid--5-cols {
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem;
+}
+.logo-col img {
+  width: 200px;
+  background-color: #363057;
+  padding: 8px;
+}
+.social-links,
+.footer-nav {
+  list-style: none;
+}
+.social-links li a,
+.footer-nav li a {
+  text-decoration: none;
+  color: rgb(43 42 42 / 75%);
+  font-family: "Poppins", sans-serif;
+}
+.footer-heading {
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+}
+
+.footer {
+  margin-top: 5rem;
+  border-top: 2px solid #363057;
+}
+.container {
+  margin-top: 3rem;
+}
+.address-col p,
+.address-col .contacts p a {
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  color: rgb(43 42 42 / 75%);
+}
+
+@media (max-width: 1000px) {
+  .hero-box .grid-right-side img {
+    /* margin-top: 5%; */
+    display: block;
+    width: 80%;
+    position: static;
+    /* transform: translate(-50%,-50%); */
+    -webkit-transform: translate(-0%, 0%);
+  }
+  .hero-box {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .grid-left-side {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .grid-left-side h1 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    margin-top: 25px;
+    font-size: 2.3rem;
+    color: white;
+  }
+
+  .heading-footer {
+    font-weight: 400;
+    text-align: center;
+    font-size: 1rem;
+  }
+  .grid-left-side h3 {
+    font-size: 1.6rem;
+  }
+
+  .introduction {
+    margin-bottom: 2rem;
+    width: 100%;
+  }
+
+  .introduction-contains {
+    /* max-width: 1200px;
+  margin: 0 auto; */
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+  }
+  div#second {
+    -webkit-order: 1;
+  }
+  div#first {
+    -webkit-order: 2;
+  }
+  .introduction-contains .features {
+    width: 90%;
+    margin: 0 auto;
+    padding: 0px 2rem;
+  }
+
+  .introduction-contains .features ul {
+    text-align: justify;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    list-style: none;
+  }
+  .introduction-contains li {
+    padding: 1rem 0px;
+  }
+  .introduction-contains .money-graph img {
+    width: 350px;
+    margin: 0 auto;
+  }
+
+  .grid--5-cols {
+    grid-template-columns: repeat(1, 1fr);
+    text-align: center;
+  }
+  .content_table {
+    margin: 0 auto;
+    border: none;
+  }
+}
+
+@media (max-width: 800px) {
+  .left-side img {
+    width: 100px;
+  }
+  .content_table {
+    margin: 0 auto;
+  }
+
+  .content_table .table {
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .content_table .table tr {
+    display: flex;
+    justify-content: space-between;
+    font-family: "Poppins", sans-serif;
+    border-bottom: 1px solid #363057;
+  }
+  .content_table .table tr th {
+    margin-top: 10px;
+    font-family: "Poppins", sans-serif;
+    border-bottom: 4px solid #363057;
+    font-size: 0.8rem;
+  }
+
+  .content_table .table tr td {
+    font-size: 0.8rem;
+  }
+
+  .content_table .expenseTable tr td {
+    width: 100px;
+    font-size: 0.6rem;
+  }
+
+  .current_table_tool .table th {
+    width: auto;
+    font-size: 0.8rem;
+  }
+
+  .current_table_tool .table {
+    margin: 0 auto;
+    max-width: auto;
+  }
+
+  .current_table_tool .current_expenseTable td {
+    width: auto;
+  }
+
+  .current_table_tool h3 {
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 1.2rem;
+  }
+
+  .current_expenseTable td {
+    font-family: "Poppins", sans-serif;
+  }
+
+  .current_expenseTable td svg {
+    stroke: green;
+    width: 20px;
+  }
+}
+
+@media (max-width: 640px) {
+  .left-side img {
+    width: 80px;
+  }
+
+  .right-side li a,
+  .right-side li a span {
+    font-size: 14px;
+  }
+  .right-side li {
+    padding: 0px 10px;
+  }
+  .right-side li:last-child {
+    padding: 0px 10px;
+  }
+  .left-side img {
+    width: 58px;
+  }
+}
+
+@media (max-width: 530px) {
+  .suform-container,
+  .loginform-container {
+    background-color: rgba(54, 48, 87, 0.8);
+    width: 300px;
+    margin: 0 auto;
+    border-radius: 11px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    border: 5px solid white;
+    z-index: 1111;
+    padding: 1rem;
+    transition: 1s all;
+  }
+  .suform-container h1,
+  .loginform-container h1 {
+    color: white;
+    position: relative;
+    margin-bottom: 2%;
+    letter-spacing: 1px;
+  }
+  .cancel svg {
+    position: absolute;
+    top: -18px;
+    left: 296px;
+  }
+  .cancel-login svg {
+    position: absolute;
+    top: -16px;
+    left: 292px;
+  }
+  .loginform-container h1::after {
+    content: "";
+    position: absolute;
+    background-color: yellow;
+    height: 2px;
+    width: 16px;
+    display: block;
+    left: 93px;
+    bottom: 0;
+  }
+  .suform-container h1::after {
+    content: "";
+    position: absolute;
+    background-color: yellow;
+    height: 2px;
+    width: 16px;
+    display: block;
+    left: 75px;
+    bottom: 0;
+  }
+
+  .right-side li a {
+    font-size: 0.8rem;
+    font-weight: 500;
+  }
+  .left-side img {
+    width: 50px;
+  }
+}

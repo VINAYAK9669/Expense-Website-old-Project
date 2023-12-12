@@ -33,3 +33,8 @@ Welcome to the Expense Tracker website! This project helps you manage your expen
 
 3. **Expense Tracking:**
    - Once logged in, use the expense tracker to add and manage your expenses.
+  
+## Screenshots
+
+- **Home Page:**
+![Home Page](/Screenshots/MAIN PAGE.JPG)

@@ -37,6 +37,6 @@ Welcome to the Expense Tracker website! This project helps you manage your expen
 ## Screenshots
 
 **Home Page:**
-![Home Page](/Screenshots/MAIN PAGE.JPG)
+![Home Page](Screenshots/MAIN PAGE.JPG)
 
   
